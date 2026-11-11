@@ -1,1 +1,1 @@
-# tarikh-exam
+# tateex-exam
