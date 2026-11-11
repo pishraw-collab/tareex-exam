@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+    <html dir="rtl" lang="fa">
+    <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>آزمون مطالعات اجتماعی هشتم</title>
+    <style>*{box-sizing:border-box;margin:0;padding:0;}body{font-family:'Segoe UI',Tahoma,sans-serif;background:#f5f7fa;color:#1a2a3a;padding:12px;font-size:14px;direction:rtl;}.container{max-width:860px;width:100%;background:#ffffff;border-radius:12px;padding:16px 20px 24px;margin:0 auto;box-shadow:0 2px 12px rgba(0,0,0,0.06);border:1px solid #e8ecf0;}.header{text-align:center;border-bottom:2px solid #e8ecf0;padding-bottom:10px;margin-bottom:14px;}.header h1{font-size:1.3rem;font-weight:700;color:#1a2a3a;}.header .designer{font-size:0.85rem;color:#2e7d32;font-weight:600;}.header small{background:#f0f2f5;padding:2px 14px;border-radius:20px;display:inline-block;margin-top:4px;font-size:0.7rem;color:#5a6a7a;}.info-bar{background:#f8f9fb;padding:8px 14px;border-radius:10px;border:1px solid #e8ecf0;margin-bottom:14px;}.info-bar .row{display:table;width:100%;}.info-bar .cell{display:table-cell;vertical-align:middle;padding:2px 4px;}.info-bar label{font-size:0.8rem;font-weight:500;color:#4a5a6a;white-space:nowrap;}.info-bar input{border:1.5px solid #dce0e5;border-radius:8px;padding:5px 12px;font-size:0.8rem;width:100%;max-width:150px;background:#fff;}.timer{font-size:1.1rem;font-weight:700;color:#0b3b5e;background:#e8ecf0;padding:2px 14px;border-radius:30px;min-width:50px;text-align:center;display:inline-block;}.timer.warning{color:#c06060;background:#ffe6e6;}.timer.locked{color:#888;background:#f0f0f0;}.progress{background:#e8ecf0;padding:2px 12px;border-radius:30px;font-size:0.75rem;font-weight:500;display:inline-block;}.question{background:#fafcfe;border:1px solid #e8ecf0;border-radius:10px;padding:10px 14px;margin-bottom:8px;}.q-text{font-weight:600;margin-bottom:4px;font-size:0.88rem;color:#1a2a3a;}.q-text .num{background:#2a6f97;color:#fff;border-radius:30px;padding:0 8px;font-size:0.65rem;margin-left:6px;display:inline-block;}.options label{display:block;padding:3px 12px;border-radius:8px;background:#f5f8fb;margin-bottom:2px;cursor:pointer;font-size:0.83rem;border:1px solid transparent;}.options label:hover{background:#eef3f8;border-color:#dce3ea;}.options input[type="radio"]{width:15px;height:15px;margin-left:8px;cursor:pointer;vertical-align:middle;}.truefalse{display:flex;gap:20px;margin:6px 0;flex-wrap:wrap;}.truefalse label{display:inline-flex;align-items:center;gap:6px;font-size:0.85rem;cursor:pointer;background:#f5f8fb;padding:4px 12px;border-radius:8px;border:1px solid #e8ecf0;}.truefalse input[type="radio"]{width:15px;height:15px;cursor:pointer;}.descriptive-answer{width:100%;min-height:70px;padding:8px 10px;border-radius:8px;border:1.5px solid #dce0e5;font-size:0.82rem;font-family:inherit;resize:vertical;background:#fff;margin-top:4px;}.short-answer-input{width:100%;padding:6px 10px;border-radius:8px;border:1.5px solid #dce0e5;font-size:0.82rem;font-family:inherit;margin-top:4px;}.actions{margin-top:14px;padding-top:12px;border-top:1.5px solid #e8ecf0;text-align:center;}.btn{border:none;padding:6px 18px;border-radius:30px;font-weight:600;font-size:0.85rem;cursor:pointer;display:inline-block;transition:all 0.2s;}.btn-primary{background:#3a8db5;color:#fff;}.btn-primary:hover{background:#2a7aa0;}.btn-primary:disabled{opacity:0.5;cursor:not-allowed;}.save-notification{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:9999;padding:25px 30px;background:linear-gradient(135deg,#e8f5e9,#a5d6a7);border-radius:16px;border:3px solid #2e7d32;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.3);display:none;width:88%;max-width:420px;min-width:280px;}.save-notification.show{display:block !important;}@keyframes popIn{0%{transform:scale(0.6);opacity:0;}100%{transform:scale(1);opacity:1;}}.save-notification .save-icon{font-size:3rem;display:block;margin-bottom:6px;}.save-notification .save-title{font-size:1.3rem;font-weight:800;color:#1b5e20;}.save-notification .save-subtitle{font-size:0.85rem;color:#2e7d32;display:block;}.save-notification .btn-save-json{background:#2e7d32;color:#fff;border:none;padding:12px 30px;border-radius:50px;font-weight:700;font-size:1.1rem;cursor:pointer;transition:all 0.25s;box-shadow:0 3px 12px rgba(46,125,50,0.3);width:100%;max-width:250px;margin:4px auto;display:block;}.save-notification .btn-save-json:hover{background:#1b5e20;}.save-notification .close-save{position:absolute;top:8px;left:12px;background:none;border:none;font-size:1.6rem;cursor:pointer;color:#2e7d32;padding:0 4px;display:flex;flex-direction:column;align-items:center;line-height:1;}.save-notification .close-save .close-label{font-size:0.5rem;color:#2e7d32;font-weight:700;margin-top:-2px;}.save-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.5);z-index:9998;display:none;pointer-events:none;}.save-overlay.show{display:block;}.loading-overlay{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);z-index:10000;display:none;justify-content:center;align-items:center;}.loading-overlay.show{display:flex;}.loading-box{background:#fff;padding:30px 35px;border-radius:16px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.3);max-width:340px;width:88%;animation:popIn 0.3s ease;}.spinner{width:60px;height:60px;border:5px solid #e8ecf0;border-top-color:#2a6f97;border-radius:50%;animation:spin 0.8s linear infinite;margin:0 auto 15px auto;}@keyframes spin{to{transform:rotate(360deg);}}.loading-icon{font-size:3rem;display:block;margin-bottom:10px;}.loading-icon.success{color:#2e7d32;}.loading-icon.error{color:#c06060;}.loading-text{font-size:1rem;font-weight:700;color:#1a2a3a;margin-bottom:6px;}.loading-subtext{font-size:0.78rem;color:#888;line-height:1.5;}.exit-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.4);z-index:10000;display:none;justify-content:center;align-items:center;}.exit-modal.show{display:flex;}.exit-modal-content{background:#ffffff;border-radius:14px;padding:24px 20px;max-width:380px;width:90%;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,0.2);animation:popIn 0.3s ease;direction:rtl;}.exit-modal-content .modal-icon{font-size:2.2rem;display:block;margin-bottom:6px;}.exit-modal-content .modal-title{font-size:1rem;font-weight:700;color:#1a2a3a;}.exit-modal-content .modal-text{font-size:0.9rem;color:#333;line-height:1.6;}.exit-modal-content .modal-actions{display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap;}.exit-modal-content .modal-actions .btn{min-width:80px;padding:8px 20px;font-size:0.85rem;border-radius:30px;cursor:pointer;border:none;font-weight:600;}.exit-modal-content .modal-actions .btn-primary{background:#e8ecf0;color:#1a2a3a;border:1px solid #dce0e5;}.exit-modal-content .modal-actions .btn-danger{background:#c06060;color:#fff;}@media (max-width:768px){.container{padding:10px;}.info-bar .cell{display:block;width:100%;}.info-bar input{max-width:100%;}.actions .btn-group .cell{display:block;width:100%;}.actions .btn{width:100%;}.question{padding:8px 10px;}.q-text{font-size:0.82rem;}.timer{font-size:0.95rem;padding:2px 10px;}.save-notification{width:92%;max-width:350px;}}@media print{.btn{display:none !important;}}</style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="exam-section" id="examSection">
+            <div class="header"><h1>آزمون مطالعات اجتماعی هشتم</h1><div class="designer">طراح سوالات: آقای علی زاده</div><small>نمره: 20 | زمان: 25 دقیقه</small></div>
+            <div class="info-bar"><div class="row">
+                <div class="cell" style="width:1%;"><label>نام و نام خانوادگی:</label></div>
+                <div class="cell" style="width:30%;"><input type="text" id="studentName" oninput="checkInfoFilled()"></div>
+                <div class="cell" style="width:1%;"><label>شعبه/کلاس:</label></div>
+                <div class="cell" style="width:30%;"><input type="text" id="studentClass" oninput="checkInfoFilled()"></div>
+                <div class="cell" style="width:1%;"><span class="progress" id="progress">۰ / 20</span></div>
+                <div class="cell" style="width:1%;"><span class="timer locked" id="timer">25:۰۰</span></div>
+            </div></div>
+            <div class="questions" id="questions"></div>
+            <div class="actions"><button class="btn btn-primary" id="submitBtn" disabled>ذخیره و دریافت فایل</button><div id="statusHint" style="font-size:0.72rem; color:#5a7a8a; margin-top:3px;"></div></div>
+        </div>
+        <div class="save-overlay" id="saveOverlay"></div>
+        <div class="loading-overlay" id="loadingOverlay"><div class="loading-box" id="loadingBox"><div class="spinner" id="loadingSpinner"></div><div class="loading-text" id="loadingText">در حال ارسال نتیجه به معلم...</div><div class="loading-subtext" id="loadingSubtext">لطفاً صفحه را نبندید و اینترنت را قطع نکنید</div></div></div>
+        <div class="save-notification" id="saveNotification">
+            <button class="close-save" id="closeSaveBtn"><span class="close-icon">✕</span><span class="close-label">بستن</span></button>
+            <span class="save-icon">📥</span><div class="save-title">ذخیره فایل JSON</div><span class="save-subtitle">نتیجه‌ی آزمون شما آماده است!</span>
+            <div style="background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:8px 12px;margin:8px 0;font-size:0.8rem;color:#856404;">⚠️ لطفاً قبل از بستن صفحه، فایل را دانلود کنید!</div>
+            <button class="btn-save-json" id="saveJsonBtn">⬇ دانلود فایل JSON</button>
+            <span class="save-hint">فایل را دانلود و برای معلم ارسال کنید</span>
+        </div>
+        <div class="exit-modal" id="exitModal">
+            <div class="exit-modal-content"><span class="modal-icon">⚠️</span><div class="modal-title">هشدار!</div><div class="modal-text">آیا فایل <span class="highlight">JSON</span> را دانلود کرده‌اید؟</div>
+            <div class="modal-actions"><button class="btn btn-primary" id="modalStayBtn">بازگشت</button><button class="btn btn-danger" id="modalExitBtn">خروج</button></div></div>
+        </div>
+    </div>
+    <script>
+        var DESC_DEFAULT=2;
+        var DESCRIPTIVE_SCORES={"30003":2.1,"30008":2.1,"30012":2.1,"30024":2.1,"30029":2.1,"30034":2.1,"40001":0.5,"40011":0.5,"40018":0.5,"40027":0.5,"40029":0.5,"40030":0.5,"40038":0.5,"50009":0.5,"50013":0.5,"50019":0.5,"50021":0.5,"50029":0.5,"50033":0.5,"50037":0.9};
+        var EXAM_TOTAL_SCORE=20;
+        var EXAM_ID='exam_1794256462949_pf2rfy';
+        var SHEET_URL='https://script.google.com/macros/s/AKfycbyuSCUmIj45800n19-hvzwD40nFFRxJt9pYsZL0cQ-bdtAdC0PFC5djNoOlhv6TqFHyAg/exec';
+        var COMPLETED_KEY='exam_completed_'+EXAM_ID;
+        var QUESTIONS=[{"id":40001,"text":"تعاون یعنی _________ و یاری رساندن به یکدیگر.","type":"fillblank","answer":"همکاری"},{"id":40011,"text":"انفاق یعنی بخشش مال، علم، توانایی و _________ به نیازمندان.","type":"fillblank","answer":"وقت"},{"id":40018,"text":"وقف گروهی زمانی است که چند نفر با مشارکت مالی یک _________ را انجام می‌دهند.","type":"fillblank","answer":"وقف"},{"id":40029,"text":"رئیس جمهور پس از انتخاب باید در مجلس شورای اسلامی _________ یاد کند.","type":"fillblank","answer":"سوگند"},{"id":40030,"text":"وزیران باید از مجلس _________ بگیرند.","type":"fillblank","answer":"رأی اعتماد"},{"id":40027,"text":"تنفیذ حکم رئیس جمهور توسط _________ انجام می‌شود.","type":"fillblank","answer":"رهبر"},{"id":40038,"text":"حمایت از تولید ملی یعنی کمک به تولید کالای _________ و قیمت مناسب.","type":"fillblank","answer":"باکیفیت"},{"id":50009,"text":"انسان موجودی اجتماعی است. این یعنی چه؟","type":"shortanswer","answer":"زندگی او با دیگران پیوند دارد و نمی‌تواند از جامعه جدا شود"},{"id":50013,"text":"به اموال وقف شده چه می‌گویند؟","type":"shortanswer","answer":"موقوفات"},{"id":50019,"text":"وقف چه تأثیری بر جامعه دارد؟","type":"shortanswer","answer":"ایجاد زیرساخت‌های عمومی و کمک به نیازمندان"},{"id":50021,"text":"قوه مجریه چیست؟","type":"shortanswer","answer":"دولت که مسئول اجرای قوانین است"},{"id":50029,"text":"وظیفه اصلی قوه مجریه چیست؟","type":"shortanswer","answer":"اجرای قوانین مصوب مجلس"},{"id":50037,"text":"استیضاح یعنی چه؟","type":"shortanswer","answer":"نمایندگان از وزیر توضیح می‌خواهند"},{"id":50033,"text":"بودجه یعنی چه؟","type":"shortanswer","answer":"پیش‌بینی درآمدها و هزینه‌های دولت"},{"id":30003,"text":"«همکاری نکردن در گناه» به چه معناست و چه مصادیقی دارد؟","type":"descriptive"},{"id":30008,"text":"آیه «آدمی در گرو عمل خویش است» (مدثر: ۳۸) چه پیامی برای تعاون دارد؟","type":"descriptive"},{"id":30012,"text":"وقف چیست و چه تأثیری بر جامعه دارد؟","type":"descriptive"},{"id":30024,"text":"هیئت دولت از چه کسانی تشکیل می‌شود و چه وظیفه‌ای دارد؟","type":"descriptive"},{"id":30029,"text":"چرا قوه مجریه یکی از سه قوه مهم حکومت است؟","type":"descriptive"},{"id":30034,"text":"درآمدهای دولت از چه منابعی تأمین می‌شود؟","type":"descriptive"}];
+        var DURATION=25;
+        var timer=null, seconds=DURATION*60, submitted=false, answers={}, descriptiveAnswers={}, savedPayload=null;
+        function get(id){return document.getElementById(id);}
+        function pad(n){return n<10?'0'+n:''+n;}
+        function trim(str){return str?str.replace(/^\s+|\s+$/g,''):'';}
+        function isMeaninglessAnswer(text){if(!text)return true;var n=text.trim().replace(/\u200c/g,'').replace(/\s+/g,'').replace(/[.!؟?,،:;'"()\[\]{}«»\-_]/g,'').toLowerCase();if(n.length===0)return true;if(n.length>30)return false;var list=['نمی‌دانم','نمی‌دونم','هیچی','هیچ','هیچ‌چیز','نخوانده‌ام','نخوانده‌ایم','نخواندیم','نخوندم','نخوندیم','بلدنیستم','بلدنیست','نمی‌توانم','نمی‌تونم','یادم‌نیست','فراموش‌کرده‌ام','فراموش‌کردم','نفهمیدم','نفهمیده‌ام','نوشته‌نشد','خالی','بی‌پاسخ'];for(var i=0;i<list.length;i++){var m=list[i].replace(/\s+/g,'').replace(/\u200c/g,'');if(n===m)return true;}if(n.length<=20){for(var j=0;j<list.length;j++){var mm=list[j].replace(/\s+/g,'').replace(/\u200c/g,'');if(n.indexOf(mm)!==-1)return true;}}return false;}
+        function isExamPermanentlyLocked(){try{return localStorage.getItem(COMPLETED_KEY)==='true';}catch(e){return false;}}
+        function markExamPermanentlyLocked(){try{localStorage.setItem(COMPLETED_KEY,'true');}catch(e){}}
+        function isFilled(){var n=get('studentName'),c=get('studentClass');return n&&n.value&&trim(n.value)!==''&&c&&c.value&&trim(c.value)!=='';}
+        function disableQuestions(){var els=document.querySelectorAll('#questions input, #questions textarea');for(var i=0;i<els.length;i++)els[i].disabled=true;}
+        function enableQuestions(){if(submitted)return;var els=document.querySelectorAll('#questions input, #questions textarea');for(var i=0;i<els.length;i++)els[i].disabled=false;}
+        
+        function renderQuestions(){
+            if(isExamPermanentlyLocked()){get('questions').innerHTML='';return;}
+            var container=get('questions');
+            if(!isFilled()){container.innerHTML='';return;} // فقط وقتی فیلدها پر شد
+            if(!QUESTIONS||!QUESTIONS.length){container.innerHTML='<div class="text-center">سوالی وجود ندارد.</div>';return;}
+            var html='',disabled=(!isFilled()||submitted)?'disabled':'';
+            for(var i=0;i<QUESTIONS.length;i++){
+                var q=QUESTIONS[i];
+                html+='<div class="question" data-qid="'+q.id+'" data-type="'+q.type+'"><div class="q-text"><span class="num">'+(i+1)+'</span> '+q.text+'</div>';
+                if(q.type==='mcq'){html+='<div class="options">';for(var j=0;j<q.opts.length;j++){var sel=(answers[q.id]===j)?'checked':'';html+='<label><input type="radio" name="q'+q.id+'" value="'+j+'" '+disabled+' '+sel+' data-qid="'+q.id+'" data-opt="'+j+'"> '+q.opts[j]+'</label>';}html+='</div>';}
+                else if(q.type==='truefalse'){var tf=answers[q.id];html+='<div class="truefalse"><label><input type="radio" name="q'+q.id+'" value="true" '+disabled+(tf===true?'checked':'')+' data-qid="'+q.id+'" data-tf="true"> درست</label><label><input type="radio" name="q'+q.id+'" value="false" '+disabled+(tf===false?'checked':'')+' data-qid="'+q.id+'" data-tf="false"> نادرست</label></div>';}
+                else if(q.type==='fillblank'||q.type==='shortanswer'){var val=answers[q.id+'_text']||'';html+='<div><input type="text" class="short-answer-input" id="answer_'+q.id+'" value="'+val+'" '+disabled+' placeholder="پاسخ..."></div>';}
+                else if(q.type==='descriptive'){var dval=descriptiveAnswers[q.id]||'';html+='<textarea class="descriptive-answer" id="desc_'+q.id+'" '+disabled+' data-qid="'+q.id+'" placeholder="پاسخ...">'+dval+'</textarea>';}
+                html+='</div>';
+            }
+            container.innerHTML=html;attachEvents();
+        }
+        
+        function attachEvents(){var radios=document.querySelectorAll('#questions input[type="radio"]');for(var i=0;i<radios.length;i++){(function(el){el.onclick=function(){if(submitted)return;if(!isFilled()){alert('لطفاً نام و کلاس خود را وارد کنید.');return;}var qid=parseInt(this.dataset.qid),type=this.closest('.question').dataset.type;if(type==='mcq')answers[qid]=parseInt(this.value);else if(type==='truefalse')answers[qid]=this.dataset.tf==='true';updateProgress();};})(radios[i]);}var shortInputs=document.querySelectorAll('#questions .short-answer-input');for(var j=0;j<shortInputs.length;j++){(function(el){el.oninput=function(){if(submitted)return;if(!isFilled()){alert('لطفاً نام و کلاس خود را وارد کنید.');return;}var qid=parseInt(this.id.replace('answer_',''));answers[qid+'_text']=this.value;updateProgress();};})(shortInputs[j]);}var descInputs=document.querySelectorAll('#questions .descriptive-answer');for(var k=0;k<descInputs.length;k++){(function(el){el.oninput=function(){if(submitted)return;if(!isFilled()){alert('لطفاً نام و کلاس خود را وارد کنید.');return;}var qid=parseInt(this.dataset.qid);descriptiveAnswers[qid]=this.value;updateProgress();};})(descInputs[k]);}}
+        function updateProgress(){var count=0;for(var i=0;i<QUESTIONS.length;i++){var q=QUESTIONS[i];if(q.type==='mcq'||q.type==='truefalse'){if(answers[q.id]!==undefined)count++;}else if(q.type==='fillblank'||q.type==='shortanswer'){if(answers[q.id+'_text']&&answers[q.id+'_text'].trim()!=='')count++;}else{if(descriptiveAnswers[q.id]&&descriptiveAnswers[q.id].trim()!=='')count++;}}get('progress').innerHTML=count+' / '+QUESTIONS.length;}
+        function startTimer(){if(timer)clearInterval(timer);if(submitted)return;timer=setInterval(function(){seconds--;updateTimer();if(seconds<=0){clearInterval(timer);timer=null;doSubmit(true);}},1000);}
+        function updateTimer(){if(seconds<0)seconds=0;var m=Math.floor(seconds/60),s=seconds%60;var tm=get('timer');tm.innerHTML=pad(m)+':'+pad(s);tm.className=seconds<60?'timer warning':submitted?'timer locked':'timer';}
+        
+        function checkInfoFilled(){
+            if(submitted)return;
+            if(isExamPermanentlyLocked()){updateExamLock();return;}
+            var btn=get('submitBtn'),section=get('examSection');
+            if(isFilled()){
+                section.className='exam-section';
+                if(!get('questions').innerHTML.trim()){renderQuestions();} // رندر در لحظه
+                enableQuestions();
+                btn.disabled=false;
+                if(!timer&&seconds>0)startTimer();
+            } else {
+                section.className='exam-section';
+                get('questions').innerHTML=''; // پاک کردن سوالات
+                btn.disabled=true;
+                get('timer').className='timer locked';
+                if(timer){clearInterval(timer);timer=null;}
+            }
+        }
+        
+        function updateExamLock(){if(isExamPermanentlyLocked()){get('examSection').className='exam-section permanently-locked';disableQuestions();get('submitBtn').disabled=true;get('timer').className='timer locked';return;}if(submitted){get('examSection').className='exam-section completed';disableQuestions();get('submitBtn').disabled=true;get('timer').className='timer locked';return;}if(!isFilled()){get('examSection').className='exam-section locked';disableQuestions();get('submitBtn').disabled=true;get('timer').className='timer locked';}else{get('examSection').className='exam-section';enableQuestions();get('submitBtn').disabled=false;get('timer').className='timer';}}
+        function doSubmit(auto){if(submitted)return;if(!isFilled()){alert('نام و کلاس خود را وارد کنید.');return;}if(isExamPermanentlyLocked()){alert('این آزمون قبلاً تکمیل شده است.');return;}submitted=true;markExamPermanentlyLocked();if(timer){clearInterval(timer);timer=null;}get('submitBtn').disabled=true;get('statusHint').innerHTML='✅ ذخیره شد. فایل JSON را دانلود کنید.';var payload=generateAndSave();get('examSection').className='exam-section completed';disableQuestions();showLoadingOverlay();window.onbeforeunload=function(e){e.preventDefault();e.returnValue='⚠️ فایل JSON را دانلود کنید!';return '⚠️ فایل JSON را دانلود کنید!';};}
+        
+        function generateAndSave(){
+            var name=trim(get('studentName').value),cls=trim(get('studentClass').value),ansList=[],totalScore=0,maxScore=0;
+            for(var i=0;i<QUESTIONS.length;i++){
+                var q=QUESTIONS[i],item={id:q.id,rowNumber:i+1};
+                if(q.type==='mcq'){var sel=answers[q.id]!==undefined?answers[q.id]:-1,correct=(sel===q.ans),score=DESCRIPTIVE_SCORES[q.id]!==undefined?DESCRIPTIVE_SCORES[q.id]:0.5,s=correct?score:0;totalScore+=s;maxScore+=score;item.selected=sel;item.correct=q.ans;item.isCorrect=correct;item.type='mcq';item.score=s;item.maxScore=score;}
+                else if(q.type==='truefalse'){var selTF=answers[q.id]!==undefined?answers[q.id]:null,correctTF=(selTF===q.correctAnswer),score=DESCRIPTIVE_SCORES[q.id]!==undefined?DESCRIPTIVE_SCORES[q.id]:0.5,s=correctTF?score:0;totalScore+=s;maxScore+=score;item.selectedTF=selTF;item.correctAnswer=q.correctAnswer;item.isCorrect=correctTF;item.type='truefalse';item.score=s;item.maxScore=score;}
+                else if(q.type==='fillblank'||q.type==='shortanswer'){var text=answers[q.id+'_text']||'',correctText=text.trim().toLowerCase()===(q.answer||'').trim().toLowerCase(),score=DESCRIPTIVE_SCORES[q.id]!==undefined?DESCRIPTIVE_SCORES[q.id]:0.5,s=correctText?score:0;totalScore+=s;maxScore+=score;item.textAnswer=text;item.correctAnswer=q.answer;item.isCorrect=correctText;item.type=q.type;item.score=s;item.maxScore=score;}
+                else if(q.type==='descriptive'){
+                    var desc=descriptiveAnswers[q.id]||'',descScore=DESCRIPTIVE_SCORES[q.id]!==undefined?DESCRIPTIVE_SCORES[q.id]:DESC_DEFAULT,s=0;
+                    if(isMeaninglessAnswer(desc)){s=0;}
+                    else if(desc.trim().length>0){
+                        var studentAns=desc.trim().toLowerCase(),keyAns=(q.answer||'').trim().toLowerCase();
+                        if(!keyAns){var ratio=Math.min(desc.trim().length/20,1);s=Math.round(descScore*ratio*10)/10;}
+                        else{
+                            if(studentAns.indexOf(keyAns)!==-1||keyAns.indexOf(studentAns)!==-1){s=descScore;}
+                            else{
+                                var keyWords=keyAns.split(/\s+/).filter(function(w){return w.length>2;});
+                                var stuWords=studentAns.split(/\s+/).filter(function(w){return w.length>2;});
+                                var common=0;
+                                for(var kw=0;kw<keyWords.length;kw++){for(var sw=0;sw<stuWords.length;sw++){if(stuWords[sw].indexOf(keyWords[kw])!==-1||keyWords[kw].indexOf(stuWords[sw])!==-1){common++;break;}}}
+                                var matchRatio=keyWords.length>0?common/keyWords.length:0;
+                                if(matchRatio>=0.5){s=descScore;}
+                                else if(matchRatio>=0.25){s=Math.round(descScore*0.5*10)/10;}
+                                else if(desc.trim().length>5){s=Math.round(descScore*0.5*10)/10;}
+                                else{s=0;}
+                            }
+                        }
+                    }else{s=0;}
+                    if(s<0)s=0;if(s>descScore)s=descScore;s=Math.round(s*10)/10;
+                    totalScore+=s;maxScore+=descScore;item.descriptiveText=desc;item.descriptiveScore=s;item.type='descriptive';item.score=s;item.maxScore=descScore;
+                }
+                ansList.push(item);
+            }
+            var scoreOutOf20=maxScore>0?Math.round((totalScore/maxScore)*20*10)/10:0,scoreOutOfX=maxScore>0?Math.round((totalScore/maxScore)*EXAM_TOTAL_SCORE*10)/10:0,payload={studentName:name,studentClass:cls,answers:ansList,totalScore:Math.round(totalScore*10)/10,maxScore:Math.round(maxScore*10)/10,scoreOutOf20:scoreOutOf20,scoreOutOfX:scoreOutOfX,examTotalScore:EXAM_TOTAL_SCORE,timestamp:new Date().toISOString(),examId:EXAM_ID,examTitle:'آزمون مطالعات اجتماعی هشتم'};
+            savedPayload=payload;
+            var hint=get('statusHint');
+            if(hint){hint.innerHTML='⏳ در حال ارسال نتیجه به معلم...';hint.style.color='#e8b060';}
+            fetch('https://script.google.com/macros/s/AKfycbyuSCUmIj45800n19-hvzwD40nFFRxJt9pYsZL0cQ-bdtAdC0PFC5djNoOlhv6TqFHyAg/exec',{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(function(){if(hint){hint.innerHTML='✅ نتیجه با موفقیت برای معلم ارسال شد.';hint.style.color='#4a9a6a';}showLoadingResult(true);}).catch(function(){if(hint){hint.innerHTML='⚠️ ارسال خودکار ناموفق. فایل JSON را دانلود کنید.';hint.style.color='#c06060';}showLoadingResult(false);});
+            var btn=get('saveJsonBtn'),newBtn=btn.cloneNode(true);btn.parentNode.replaceChild(newBtn,btn);newBtn.onclick=function(){if(savedPayload){var blob=new Blob([JSON.stringify(savedPayload,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='نتیجه_'+savedPayload.examTitle+'_'+savedPayload.studentName+'.json';document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(function(){URL.revokeObjectURL(url);},1000);window.onbeforeunload=null;}};
+            var closeBtn=get('closeSaveBtn'),newClose=closeBtn.cloneNode(true);closeBtn.parentNode.replaceChild(newClose,closeBtn);newClose.onclick=function(){if(confirm('⚠️ فایل JSON را دانلود کرده‌اید؟')){hideSaveNotification();window.onbeforeunload=null;get('examSection').className='exam-section permanently-locked';}};
+            return payload;
+        }
+        
+        function showLoadingOverlay(){var lo=get('loadingOverlay');if(lo){lo.className='loading-overlay show';}var box=get('loadingBox');if(box){box.innerHTML='<div class="spinner"></div><div class="loading-text">در حال ارسال نتیجه به معلم...</div><div class="loading-subtext">لطفاً صفحه را نبندید و اینترنت را قطع نکنید</div>';}}function showLoadingResult(success){var box=get('loadingBox');if(!box){hideLoadingOverlay();showSaveNotification();return;}if(success){box.innerHTML='<div class="loading-icon success">✅</div><div class="loading-text" style="color:#2e7d32;">ارسال موفق</div><div class="loading-subtext">نتیجه برای معلم ارسال شد</div>';setTimeout(function(){hideLoadingOverlay();showSaveNotification();},1400);}else{box.innerHTML='<div class="loading-icon error">⚠️</div><div class="loading-text" style="color:#c06060;">ارسال ناموفق</div><div class="loading-subtext">لطفاً فایل JSON را دانلود و دستی برای معلم بفرستید</div>';setTimeout(function(){hideLoadingOverlay();showSaveNotification();},2800);}}function hideLoadingOverlay(){var lo=get('loadingOverlay');if(lo){lo.className='loading-overlay';}}function showSaveNotification(){get('saveOverlay').className='save-overlay show';get('saveNotification').className='save-notification show';}
+        function hideSaveNotification(){get('saveOverlay').className='save-overlay';get('saveNotification').className='save-notification';}
+        
+        window.onload=function(){
+            if(isExamPermanentlyLocked()){
+                get('examSection').className='exam-section permanently-locked';
+                disableQuestions();get('submitBtn').disabled=true;get('timer').className='timer locked';get('questions').innerHTML='';return;
+            }
+            get('submitBtn').disabled=true;
+            get('studentName').addEventListener('input',checkInfoFilled);
+            get('studentClass').addEventListener('input',checkInfoFilled);
+            get('submitBtn').addEventListener('click',function(){doSubmit(false);});
+            get('modalStayBtn').onclick=function(){get('exitModal').className='exit-modal';};
+            get('modalExitBtn').onclick=function(){
+                window.onbeforeunload=null;
+                try{window.close();}catch(e){}
+                try{window.location.href='about:blank';}catch(e){}
+                try{document.body.innerHTML='<h2 style="text-align:center;margin-top:50px;">✅ از آزمون خارج شدید</h2>';}catch(e){}
+            };
+            updateProgress();
+            updateTimer();
+            if(isFilled())checkInfoFilled();
+        };
+    </script>
+    
+    <script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            var K_LOCK = 'ac_lock_' + EXAM_ID;
+            var K_START = 'ac_start_' + EXAM_ID;
+            var isLocked = false;
+            try {
+                if (localStorage.getItem(K_LOCK) === '1') isLocked = true;
+                if (localStorage.getItem(K_START) === '1' && !sessionStorage.getItem('ac_sess_' + EXAM_ID)) {
+                    localStorage.setItem(K_LOCK, '1');
+                    isLocked = true;
+                }
+            } catch(e){}
+
+            if (isLocked) {
+                var sec = document.getElementById('examSection');
+                if (sec) sec.style.display = 'none';
+                var screen = document.createElement('div');
+                screen.id = 'acLockScreen';
+                screen.style.cssText = 'position:fixed;top:0;left:0;right:0;bottom:0;background:linear-gradient(135deg,#7f1d1d,#450a0a);color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:999999;padding:24px;text-align:center;font-family:Tahoma,sans-serif;direction:rtl;';
+                screen.innerHTML = '<div style="font-size:6rem;margin-bottom:20px;">🚫</div><h1 style="font-size:1.8rem;font-weight:900;margin-bottom:16px;">آزمون شما پایان یافت</h1><p style="font-size:1.1rem;line-height:2;max-width:540px;">شما از صفحه آزمون خارج شدید یا صفحه را بارگذاری مجدد کردید.<br>به دلیل مسائل امنیتی، امکان بازگشت وجود ندارد.</p><div style="background:rgba(255,255,255,0.1);padding:16px 24px;border-radius:12px;font-size:0.95rem;line-height:2;margin-top:20px;">لطفاً با معلم خود تماس بگیرید.</div>';
+                document.body.appendChild(screen);
+            } else {
+                var n = document.getElementById('studentName');
+                var c = document.getElementById('studentClass');
+                var btn = document.getElementById('submitBtn');
+                
+                var checkStart = function() {
+                    if (n.value.trim() && c.value.trim()) {
+                        try {
+                            localStorage.setItem(K_START, '1');
+                            sessionStorage.setItem('ac_sess_' + EXAM_ID, '1');
+                        } catch(e){}
+                    }
+                };
+                
+                if (n) n.addEventListener('input', checkStart);
+                if (c) c.addEventListener('input', checkStart);
+                
+                if (btn) {
+                    btn.addEventListener('click', function() {
+                        setTimeout(function() {
+                            try { localStorage.setItem(K_LOCK, '1'); } catch(e){}
+                        }, 2500);
+                    });
+                }
+                
+                window.addEventListener('beforeunload', function(e) {
+                    try {
+                        if (localStorage.getItem(K_START) === '1' && !localStorage.getItem(K_LOCK)) {
+                            localStorage.setItem(K_LOCK, '1');
+                            e.preventDefault();
+                            e.returnValue = 'هشدار! با خروج از صفحه، آزمون پایان می‌یابد.';
+                            return e.returnValue;
+                        }
+                    } catch(err){}
+                });
+                
+                window.addEventListener('pagehide', function() {
+                    try {
+                        if (localStorage.getItem(K_START) === '1' && !localStorage.getItem(K_LOCK)) {
+                            localStorage.setItem(K_LOCK, '1');
+                        }
+                    } catch(e){}
+                });
+            }
+        }, 500);
+    });
+    </script>
+    </body>
+    </html>
